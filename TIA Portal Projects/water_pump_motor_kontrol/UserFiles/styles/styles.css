@@ -1,0 +1,127 @@
+* {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: auto;
+    width: 100%;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+body{
+    background-color: #111111;
+}
+
+.main {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 40% 40%;
+    grid-column-gap: 30px;
+    grid-row-gap: 25px;
+}
+
+.pump-panel {
+    background-color: #313131;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.pump-panel-left {
+    width: 50%;
+    border-right: 2px solid #111111;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-start {
+    width: 80%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.btn-stop {
+    width: 80%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.pump-panel-left>img {
+    margin-top: 10px;
+    margin-left: -20px;
+    width: 150px;
+    height: 120px;
+}
+
+.start{
+    background-color: #90EE90;
+}
+.stop{
+    background-color: #EE9090;
+}
+
+.pump-panel-right {
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-panel{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.gauge-glossy {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    height: 70%;
+}
+.gauge-glossy > .gauge {
+    --gauge-bg: #9DD0E1;
+    --gauge-value: 0;
+    --gauge-display-value: 0;
+    min-width: 150px;
+    min-height: 150px;
+    width: 5vw;
+    height: 5vw;
+}
+
+.gauge > .labels > .value-label{
+    /* left: 44% !important; */
+    text-align: center !important;
+    width: 100%;
+    left: 73% !important;
+}
+
+.gauge .labels .value-label::after{
+    text-align: center !important;
+    width: 100px !important;
+    float: none;
+}
+
+.value-label{
+    font-size: 20px; 
+    text-align: center;
+}

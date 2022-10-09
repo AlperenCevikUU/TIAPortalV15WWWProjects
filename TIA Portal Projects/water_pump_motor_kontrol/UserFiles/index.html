@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>WATER PUMP CONTROL</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/gauge.min.css?v=0.2">
+    <link rel="stylesheet" href="./styles/gauge-glossy.min.css?v=0.2">
+    <script src="./script/jquery-2.0.2.min.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        WATER PUMP CONTROL
+    </div>
+    <div class="main">
+        <div class="pump-panel">
+            <div class="pump-panel-left">
+                <img id="state1" src="./images/pump-off.png" />
+                <div class="btn-start">
+                    <button class="start" onmousedown="on1()" onmouseup="release_on1()">ON</button>
+                </div>
+                <div class="btn-stop">
+                    <button class="stop" onmousedown="off1()" onmouseup="release_off1()">OFF</button>
+                </div>
+            </div>
+            <div class="pump-panel-right">
+                <div class="gauge-glossy">
+                    <!-- Demo gauge 2-->
+                    <div id="demoGauge2_1" class="gauge">
+                        <div class="ticks">
+                            <div class="tithe" style="--gauge-tithe-tick:1;"></div>
+                            <div class="tithe" style="--gauge-tithe-tick:2;"></div>
+                            <div class="tithe" style="--gauge-tithe-tick:3;"></div>
+                            <div class="tithe" style="--gauge-tithe-tick:4;"></div>
+                            <div class="tithe" style="--gauge-tithe-tick:6;"></div>
+                            <div class="tithe" style="--gauge-tithe-tick:7;"></div>
+                            <div class="tithe" style="--gauge-tithe-tick:8;"></div>
+                            <div class="tithe" style="--gauge-tithe-tick:9;"></div>
+                            <div class="min"></div>
+                            <div class="mid"></div>
+                            <div class="max"></div>
+                        </div>
+                        <div class="tick-circle"></div>
+
+                        <div class="needle">
+                            <div class="needle-head"></div>
+                        </div>
+                        <div class="labels">
+                            <div class="value-label"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-panel">
+                    Current water level(L)
+                </div>
+            </div>
+
+</body>
+<script type="text/javascript" src="./script/script.js"></script>
+</html>
